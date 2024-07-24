@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="calculatrice.js"></script>
+    <link rel="stylesheet" href="calculatrice.css" />
+    <link rel="shortcut icon" href="icone.png" type="image/x-icon">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div class="contenant">
+        <div class="resultat" >
+          <p id="result">
+          </p>
+        </div>
+        <div class="bouton">
+            <div>
+                <button onclick="effacer()">AC</button>
+                <button onclick="changerSigne()">±</button>
+                <button onclick="ajouterOperateur('%')">%</button>
+                <button class="orange" onclick="ajouterOperateur('÷')">÷</button>
+            </div>
+            <div>
+                <button onclick="ajouterNombre(7)">7</button>
+                <button onclick="ajouterNombre(8)">8</button>
+                <button onclick="ajouterNombre(9)">9</button>
+                <button class="orange" onclick="ajouterOperateur('×')">×</button>
+            </div>
+            <div>
+                <button onclick="ajouterNombre(4)">4</button>
+                <button onclick="ajouterNombre(5)">5</button>
+                <button onclick="ajouterNombre(6)">6</button>
+                <button class="orange" onclick="ajouterOperateur('-')">-</button>
+            </div>
+            <div>
+                <button onclick="ajouterNombre(1)">1</button>
+                <button onclick="ajouterNombre(2)">2</button>
+                <button onclick="ajouterNombre(3)">3</button>
+                <button class="orange" onclick="ajouterOperateur('+')">+</button>
+            </div>
+            <div class="ligne5">
+                <button onclick="valeurAbsolue()">Abs</button>
+                <button onclick="ajouterNombre(0)">0</button>
+                <button onclick="ajouterPoint()">.</button>
+                <button class="egal" onclick="calculer()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
